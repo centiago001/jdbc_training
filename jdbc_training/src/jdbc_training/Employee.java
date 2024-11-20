@@ -187,7 +187,7 @@ public class Employee {
 		
 		Scanner sc_obj=new Scanner(System.in);
 		
-		Employee m=new Employee();
+		Employee EmpObj=new Employee();
 		
 		System.out.print("Welcome to the employee management\n");
 		
@@ -196,23 +196,24 @@ public class Employee {
 		
 		switch(mainChoice) {
 		case 1:
-			m.insert();
+			EmpObj.insert();
 			break;
 		case 2:
-			m.update();
+			EmpObj.update();
 			break;
 		case 3:
-			m.show();
+			EmpObj.show();
 			break;
 		case 4:
-			m.delete();
+			EmpObj.delete();
 			break;
 		default:
 			System.out.println("plz check the options and try again");
 			break;
 			
-		}	
-		//m.show();
+		}
+	        sc_obj.close();
+		
 		
 		
 	}
